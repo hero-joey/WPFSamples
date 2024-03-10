@@ -25,21 +25,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlButtonSample", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlCheckBoxSample", "WpfControlCheckBoxSample\WpfControlCheckBoxSample.csproj", "{9559005C-D1C0-4147-8551-739466C20E0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlTextBoxSample", "WpfControlTextBoxSample\WpfControlTextBoxSample.csproj", "{FAFA5811-AD3D-4691-9B4B-842AF37767A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlTextBoxSample", "WpfControlTextBoxSample\WpfControlTextBoxSample.csproj", "{FAFA5811-AD3D-4691-9B4B-842AF37767A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlGroupBoxSample", "WpfControlGroupBoxSample\WpfControlGroupBoxSample.csproj", "{8175A4A6-6B28-49D7-874C-8CF510DC33D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlGroupBoxSample", "WpfControlGroupBoxSample\WpfControlGroupBoxSample.csproj", "{8175A4A6-6B28-49D7-874C-8CF510DC33D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlComboBoxSample", "WpfControlComboBoxSample\WpfControlComboBoxSample.csproj", "{901F8886-F6A3-42CF-A926-9BC97BF69899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlComboBoxSample", "WpfControlComboBoxSample\WpfControlComboBoxSample.csproj", "{901F8886-F6A3-42CF-A926-9BC97BF69899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlViewSample", "WpfControlViewSample\WpfControlViewSample.csproj", "{5061EA3B-30BD-4AFF-ADAD-2AFF15F3CF0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlViewSample", "WpfControlViewSample\WpfControlViewSample.csproj", "{5061EA3B-30BD-4AFF-ADAD-2AFF15F3CF0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlTreeViewSample", "WpfControlTreeViewSample\WpfControlTreeViewSample.csproj", "{6A51608B-C880-42E9-B241-29AFC4A4288A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlTreeViewSample", "WpfControlTreeViewSample\WpfControlTreeViewSample.csproj", "{6A51608B-C880-42E9-B241-29AFC4A4288A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlDataGridSample", "WpfControlDataGridSample\WpfControlDataGridSample.csproj", "{115BFF2D-CFD0-43BF-B4B1-D0EEB1948FBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlDataGridSample", "WpfControlDataGridSample\WpfControlDataGridSample.csproj", "{115BFF2D-CFD0-43BF-B4B1-D0EEB1948FBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlScrollViewSample", "WpfControlScrollViewSample\WpfControlScrollViewSample.csproj", "{0F4A821E-0672-4AFE-B94B-5D5B620F4D90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlScrollViewSample", "WpfControlScrollViewSample\WpfControlScrollViewSample.csproj", "{0F4A821E-0672-4AFE-B94B-5D5B620F4D90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlExpanderSample", "WpfControlExpanderSample\WpfControlExpanderSample.csproj", "{49DDFBB6-62FC-47F4-8871-D10CDDF24984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlExpanderSample", "WpfControlExpanderSample\WpfControlExpanderSample.csproj", "{49DDFBB6-62FC-47F4-8871-D10CDDF24984}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMarginSample", "WpfMarginSample\WpfMarginSample\WpfMarginSample.csproj", "{ED60FEFE-F6E1-4A2C-8979-EF1835C6407C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{49DDFBB6-62FC-47F4-8871-D10CDDF24984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49DDFBB6-62FC-47F4-8871-D10CDDF24984}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49DDFBB6-62FC-47F4-8871-D10CDDF24984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED60FEFE-F6E1-4A2C-8979-EF1835C6407C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED60FEFE-F6E1-4A2C-8979-EF1835C6407C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED60FEFE-F6E1-4A2C-8979-EF1835C6407C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED60FEFE-F6E1-4A2C-8979-EF1835C6407C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
