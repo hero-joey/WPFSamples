@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfControlTextBoxSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlTextBoxSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Name="NameBox" Width="200" Height="30" Text="Enter your name" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <PasswordBox Name="PasswordBox" MaxLength="16" PasswordChar="*"/>
+            <Label Width="200" HorizontalAlignment="Left">
+                <TextBlock TextWrapping="Wrap">
+                A TextBox is a control that allows a user to enter and edit text. It can be used to create a form to accept user input. The TextBox control is the most basic text input control. It can be used to accept single line of text input
+                </TextBlock>
+            </Label>
+            <Label Target="{Binding ElementName=NameBox2}" />
+            <TextBox Name="NameBox2" Width="200" Height="30" Text="Enter your name" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBlock Text="您正在学习WPF课程" FontSize="18" HorizontalAlignment="Center"/>
+        </StackPanel>
+  
+    </Grid>
+</Window>

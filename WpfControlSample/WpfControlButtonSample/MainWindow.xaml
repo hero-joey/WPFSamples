@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfControlButtonSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlButtonSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="Btn1" Height="40" Width="80" Click="OnBtn1Click">
+                <Image Source="images/BackGround.png"/>
+            </Button>
+
+            <Button Name="Btn2">
+                <Button.Content>
+                    点击图片按钮
+                </Button.Content>
+            </Button>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <RadioButton Name="RadioButton1" Checked="RadioButton1Checked" Content="单选按钮1"/>
+                <RadioButton Name="RadioButton2" Checked="RadioButton1Checked" Content="单选按钮2"/>
+                <RadioButton Name="RadioButton3" Content="单选按钮3"/>
+                <TextBlock Name="RadioChoice" Text="RadioButton1" VerticalAlignment="Center" Background="DarkRed"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <RadioButton GroupName="Color" Content="Red"/>
+                <RadioButton GroupName="Color" Content="Blue"/>
+                <RadioButton GroupName="Number" Content="1"/>
+                <RadioButton GroupName="Number" Content="2"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <RepeatButton Name="RepeatButton" Width="100" Delay="500" Interval="100" Click="OnRepeatButtonClicked"/>
+                <TextBlock Name="RepeatButtonInfo" Width="200" Text="RepeatCount" Background="DarkRed"/>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

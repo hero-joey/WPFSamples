@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfControlSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlSample"
+        mc:Ignorable="d"
+        Title="WpfControl" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!-- GRID跨列 -->
+        <TextBlock HorizontalAlignment="Center" FontSize="20" Grid.ColumnSpan="3">Grid网格使用</TextBlock>
+        <Button Grid.Row="1" Grid.Column="0">Button1</Button>
+        <Button Grid.Row="1" Grid.Column="1">Button2</Button>
+        <Button Grid.Row="1" Grid.Column="2">Button3</Button>
+    </Grid>
+</Window>

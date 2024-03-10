@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfControlDataGridSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlDataGridSample"
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="DataProvider" ObjectType="{x:Type local:OrderStatus}" MethodName="GetValues">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type Type="local:OrderStatus" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
+        <local:EmailConverter x:Key="EmailConverter" /> 
+    </Window.Resources>
+    <Grid>
+        <DataGrid
+            Name="CustomerDataGrid"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding FirstName}" Header="First Name" />
+                <DataGridTextColumn Binding="{Binding LastName}" Header="Last Name" />
+                <DataGridHyperlinkColumn
+                    Binding="{Binding Email}"
+                    ContentBinding="{Binding Email, Converter={StaticResource EmailConverter}}"
+                    Header="Email" />
+                <DataGridCheckBoxColumn Binding="{Binding IsMember}" Header="Member" />
+                <DataGridComboBoxColumn
+                    Header="Order Status"
+                    ItemsSource="{Binding Source={StaticResource DataProvider}}"
+                    SelectedItemBinding="{Binding Status}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

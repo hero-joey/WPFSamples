@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfMarginSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMarginSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border Padding="10" Background="LightBlue" BorderThickness="5" BorderBrush="Black">
+            <StackPanel Background="Aquamarine">
+                <TextBlock Text="水平居中" TextAlignment="Center" FontSize="18"></TextBlock>
+                <Button HorizontalAlignment="Left">Button1左对齐</Button>
+                <Button HorizontalAlignment="Right">Button2右对齐</Button>
+                <Button HorizontalAlignment="Center">Button3居中对齐</Button>
+                <Button>Button4拉伸平铺</Button>
+                <Button>Button5拉伸平铺</Button>
+            </StackPanel>
+
+        </Border>
+    </Grid>
+</Window>

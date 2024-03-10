@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfControlDockPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlDockPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!-- 最后一个元素是否填充整个DockPanel -->
+       <DockPanel LastChildFill="True"> 
+        <Border Background="AntiqueWhite" BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Top">
+            <TextBlock Foreground="DarkCyan">DockPaneTop</TextBlock>
+            </Border>
+
+            <Border Background="LightSkyBlue" BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Bottom">
+                <TextBlock Foreground="DarkCyan">DockPaneBottom</TextBlock>
+            </Border>
+
+            <Border Width="100" Background="DeepSkyBlue" BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Left">
+                <TextBlock Foreground="DarkCyan">DockPaneLeft</TextBlock>
+            </Border>
+
+            <Border Background="DarkBlue" BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Right">
+                <TextBlock Foreground="DarkCyan">DockPaneRight</TextBlock>
+            </Border>
+
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfControlBorderSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlBorderSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border Background="HotPink" Width="200" Height="35" CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- 设置为透明色, 但是Border装饰器的背景色不会透明，设置button为圆角 -->
+            <Button Content="Border装饰器" Width="100" Height="50" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>

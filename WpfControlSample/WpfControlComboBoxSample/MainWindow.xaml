@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfControlComboBoxSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlComboBoxSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <local:Cities x:Key="Cities"/>
+            </StackPanel.Resources>
+
+            <ComboBox
+                x:Name="CityComboBox" 
+                ItemsSource="{StaticResource Cities}" 
+                Text="SiChuan"
+                IsEditable="True"
+                IsReadOnly="True"/>
+
+            <!-- 绑定到ComboBox的SelectedItem属性 -->
+            <TextBlock Text="{Binding ElementName=CityComboBox, Path=SelectedItem}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <ComboBox SelectedIndex="1">
+                <ComboBoxItem>数据1</ComboBoxItem>
+                <ComboBoxItem>数据2</ComboBoxItem>
+                <ComboBoxItem>数据3</ComboBoxItem>
+            </ComboBox> 
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Width="50" Height="80" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ListBox SelectionMode="Multiple" SelectedIndex="2">
+                <ListBoxItem>数据1</ListBoxItem>
+                <ListBoxItem>数据2</ListBoxItem>
+                <ListBoxItem>数据3</ListBoxItem>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,78 @@
+﻿<Window x:Class="HelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorld"
+        mc:Ignorable="d"
+        Title="FirstApp" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Border" x:Key="BorderBackGround">
+            <Setter Property="Background" Value="LightYellow"/>
+            <Setter Property="Height" Value="50"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel>
+            <!-- 以下内容均为StackPanel的Child属性内容 -->
+            <Button Click="EditButtonClocked">
+                <Button.Content>Hello World</Button.Content>
+                <Button.Background>
+                    <SolidColorBrush Color="Blue"/>
+                </Button.Background>
+            </Button>
+            <Button Background="Yellow" Foreground="Blue">你点击一下试试</Button>
+            <Rectangle Height="100">
+                <Rectangle.Fill>
+                    <!-- StartPoint决定渐变色的顺序, StartPoint(x, y) EndPoint(x,y)渐变方向 水平或者垂直方向-->
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.0" Color="Red" />
+                            <GradientStop Offset="0.5" Color="Green" />
+                            <GradientStop Offset="1.0" Color="Blue" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <Border>
+                <Border.Child>
+                    <TextBlock Width="180">Hello, I am first child</TextBlock>
+                </Border.Child>
+            </Border>
+            <!-- 使用Windows定义的静态资源样式 -->
+            <Border Style="{StaticResource BorderBackGround}">
+                <TextBlock Width="320">Hello, I am second child</TextBlock>
+                <!-- Property child is set twice -->
+                <!-- <Button></Button> -->
+            </Border>
+
+            <Button>
+                你好, 再见!
+                <Button.Background>Aquamarine</Button.Background>
+            </Button>
+            
+            <StackPanel>
+                <Button Height="50" Background="Bisque" Margin="10,10,10,10">Hit me</Button>
+                <Button Height="50" Background="Brown">
+                    <Button.Content>
+                        Hit me too
+                    </Button.Content>
+
+                    <Button.Margin>
+                        <Thickness Left="10" Top="10" Right="10" Bottom="5"/>
+                    </Button.Margin>
+                </Button>
+            </StackPanel>
+            
+            <!-- 附加属性 -->
+            <DockPanel Height="50">
+                <Button DockPanel.Dock="Left">Left</Button>
+                <Button DockPanel.Dock="Right">Right</Button>
+                <Button>Others</Button>
+            </DockPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

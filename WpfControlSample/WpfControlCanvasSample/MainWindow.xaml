@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfControlCanvasSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlCanvasSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <TextBlock Canvas.Left="50" Canvas.Top="200" Text="Hello World" FontSize="50" Foreground="Red" />
+            <TextBlock Canvas.Left="50" Canvas.Top="200" Text="我可以浮动在他的上面" FontSize="20" Foreground="Blue" />
+
+        </Canvas>
+    </Grid>
+</Window>
